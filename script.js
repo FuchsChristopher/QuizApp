@@ -1,4 +1,4 @@
-let question = [
+let questions = [
     {
         "question": "Wer hat HTML erfunden?",
         "answer_1": "Robbie Williams",
@@ -22,6 +22,14 @@ let question = [
         "answer_3": "&lt;frame&gt;",
         "answer_4": "&lt;frameset&gt",
         "right_answer": 2
+    },
+    {
+        "question": "Wie stellt man einen Text am BESTEN fett dar?",
+        "answer_1": "&lt;strong&gt;",
+        "answer_2": "CSS nutzen",
+        "answer_3": "&lt;bold&gt;",
+        "answer_4": "&lt;b&gt;",
+        "right_answer": 1
     },
     {
         "question": "Welches Attribut kann man NICHT für Textarea verwenden?",
@@ -48,3 +56,39 @@ let question = [
         "right_answer": 4
     }
 ];
+
+
+let currentQuestion = 0;
+
+
+function init() {
+    document.getElementById('all-questions').innerHTML = questions.length;
+
+    showQuestion();
+}
+
+
+function showQuestion() {
+    let question = questions[currentQuestion];
+
+    document.getElementById('questiontext').innerHTML = question['question'];
+    document.getElementById('answer_1').innerHTML = question['answer_1'];
+    document.getElementById('answer_2').innerHTML = question['answer_2'];
+    document.getElementById('answer_3').innerHTML = question['answer_3'];
+    document.getElementById('answer_4').innerHTML = question['answer_4'];
+}
+
+
+function answer(selection) {
+    let question = questions[currentQuestion];
+    console.log('Selected answer is', selection);
+    let selectionQuestionNumber = selection.slice(-1);
+    console.log('selectionQuestionNumber is', selectionQuestionNumber);
+    console.log('Current question is', question['right_answer']);
+
+    if(selectionQuestionNumber == question['right_answer']) {
+        console.log('Richtige Antwort :)');
+    } else {
+        console.log('Falsche Antwort!!!');
+    }
+}
