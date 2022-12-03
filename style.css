@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(81, 22, 153) !important;
+    background-color: rgb(39, 53, 92) !important;
 }
 
 .container {
     min-height: 100vh;
-    background-color: rgb(81, 22, 153) !important;
+    background-color: rgb(39, 53, 92) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,4 +24,8 @@ body {
 .quiz-answer-card :hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success, .bg-danger {
+    color: white;
 }
