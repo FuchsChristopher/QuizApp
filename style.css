@@ -1,5 +1,3 @@
-
-
 .container {
     min-height: 100vh;
     display: flex;
@@ -48,24 +46,36 @@
 
 .quiz-answer-card :hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.bg-success, .bg-danger {
+.bg-success,
+.bg-danger {
     color: white;
 }
 
 .bgc-nav {
     background-color: rgb(39, 53, 92);
     color: white;
-    height: 50vh;
-    width: 8rem;
+    height: 55vh;
+    width: 10rem;
     border-radius: 4px 0px 0px 4px;
 }
 
 .card-body-color {
     background-color: rgb(247, 247, 247);
     border-radius: 4px;
+}
+
+.card-body2 {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    padding-left: 54px;
+    padding-right: 54px;
+}
+
+.card-body {
+    display: flex;
 }
 
 .navImg {
@@ -93,10 +103,10 @@
 }
 
 nav div {
-    width: 200%;
+    width: 160%;
     margin-bottom: 30px;
     border-left: 8px solid transparent;
-    
+
 }
 
 .hover {
@@ -108,4 +118,34 @@ nav div {
 .hover:hover {
     border-left: 8px solid white;
     transition: all 125ms ease-in-out;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.imgSize {
+    width: 80px;
+}
+
+.navLink a {
+    margin-left: 0px;
+}
+
+.answerButtons {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+}
+
+.bgForButton {
+    background-color: lightgreen;
+}
+
+.bgForButton2 {
+    background-color: lightcoral;
 }
