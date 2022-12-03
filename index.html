@@ -18,21 +18,26 @@
 
 <body onload="init()">
 
-    <nav class="navbar bg-light">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">QuizApp</span>
-        </div>
-    </nav>
-
     <div class="container">
-        <div class="card quiz-card">
-            <img src="./img/pencil.jpg" class="card-img-top">
+        <div class="card2 quiz-card">
 
             <div class="card-body" id="endScreen" style="display: none;">
                 Quiz beendet!
             </div>
+            
+            <div class="bgc-nav">
+                <div class="navImg">
+                    <img class="imgSize" src="./img/logo.png">
+                </div>
+                <nav class="navLink">
+                    <div class="hover"><a href="#">HTML</a></div>
+                    <div class="hover"><a href="#">CSS</a></div>
+                    <div class="hover"><a href="#">JS</a></div>
+                    <div class="hover"><a href="#">JAVA</a></div>
+                </nav>
+            </div>
 
-            <div class="card-body" id="questionBody">
+            <div class="card-body card-body-color" id="questionBody">
                 <h5 class="card-title" id="questiontext">Frage</h5>
 
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">

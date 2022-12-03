@@ -63,7 +63,6 @@ let currentQuestion = 0;
 
 function init() {
     document.getElementById('all-questions').innerHTML = questions.length;
-
     showQuestion();
 }
 
