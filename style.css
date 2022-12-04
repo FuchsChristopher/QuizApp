@@ -93,7 +93,7 @@
 
 .navLink a {
     text-decoration: none;
-    color: white;
+    color: rgb(183, 183, 183);
     border-left: 8px solid transparent;
     transition: all 125ms ease-in-out;
 }

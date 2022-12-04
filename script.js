@@ -64,6 +64,7 @@ let currentQuestion = 0;
 function init() {
     document.getElementById('all-questions').innerHTML = questions.length;
     showQuestion();
+    
 }
 
 
@@ -77,10 +78,11 @@ function showQuestion() {
         document.getElementById('question-number').innerHTML = currentQuestion + 1;
         document.getElementById('questiontext').innerHTML = question['question'];
         document.getElementById('answer_1').innerHTML = `<div class="answerButtons"><b>A</b></div>${question['answer_1']}`;
-        document.getElementById('answer_2').innerHTML = `<div class="answerButtons"><b>A</b></div>${question['answer_2']}`;
-        document.getElementById('answer_3').innerHTML = `<div class="answerButtons"><b>A</b></div>${question['answer_3']}`;
-        document.getElementById('answer_4').innerHTML = `<div class="answerButtons"><b>A</b></div>${question['answer_4']}`;
+        document.getElementById('answer_2').innerHTML = `<div class="answerButtons"><b>B</b></div>${question['answer_2']}`;
+        document.getElementById('answer_3').innerHTML = `<div class="answerButtons"><b>C</b></div>${question['answer_3']}`;
+        document.getElementById('answer_4').innerHTML = `<div class="answerButtons"><b>D</b></div>${question['answer_4']}`;
     }
+    enablePointer();
 }
 
 
@@ -88,16 +90,34 @@ function answer(selection) {
     let question = questions[currentQuestion];
     let selectionQuestionNumber = selection.slice(-1);
     let idOfRightAnswer = `answer_${question['right_answer']}`;
-
     if (selectionQuestionNumber == question['right_answer']) {
+        document.getElementById(selection).firstChild.classList.add('bgForButton');
         document.getElementById(selection).parentNode.classList.add('bg-success');
-        
+        disabledPointer();
     } else {
-    
+        document.getElementById(idOfRightAnswer).firstChild.classList.add('bgForButton');
         document.getElementById(selection).parentNode.classList.add('bg-danger');
+        document.getElementById(selection).firstChild.classList.add('bgForButton2');
         document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
+        disabledPointer();
     }
     document.getElementById('next-button').disabled = false;
+}
+
+
+function enablePointer() {
+    document.getElementById('answerDiv1').style.pointerEvents = 'unset';
+    document.getElementById('answerDiv2').style.pointerEvents = 'unset';
+    document.getElementById('answerDiv3').style.pointerEvents = 'unset';
+    document.getElementById('answerDiv4').style.pointerEvents = 'unset';
+}
+
+
+function disabledPointer() {
+    document.getElementById('answerDiv1').style.pointerEvents = 'none';
+    document.getElementById('answerDiv2').style.pointerEvents = 'none';
+    document.getElementById('answerDiv3').style.pointerEvents = 'none';
+    document.getElementById('answerDiv4').style.pointerEvents = 'none';
 }
 
 
