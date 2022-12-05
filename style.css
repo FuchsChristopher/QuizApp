@@ -209,3 +209,12 @@ nav div {
     height: 30px;
     border-radius: 7px;
 }
+
+.startScreenDiv2 {
+    display: flex;
+    position: absolute;
+    right: 170px;
+    flex-direction: column;
+    bottom: 265px;
+    text-align: center;
+}
