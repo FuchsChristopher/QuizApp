@@ -56,7 +56,7 @@
 .bgc-nav {
     background-color: rgb(39, 53, 92);
     color: white;
-    height: 55vh;
+    height: 62vh;
     width: 10rem;
     border-radius: 4px 0px 0px 4px;
 }
@@ -64,6 +64,7 @@
 .card-body-color {
     background-color: rgb(247, 247, 247);
     border-radius: 4px;
+    flex-direction: column;
 }
 
 .card-body2 {
@@ -81,7 +82,7 @@
 .navImg {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .navLink {
@@ -122,6 +123,7 @@ nav div {
 
 .card-title {
     text-align: center;
+    margin-top: 30px;
 }
 
 .imgSize {
@@ -148,4 +150,62 @@ nav div {
 
 .bgForButton2 {
     background-color: lightcoral;
+}
+
+.endScreenDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.endScreenImg {
+    width: 170px;
+}
+
+.endScreenDiv2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -74px;
+    margin-right: -15px;
+}
+
+.endScreenImg2 {
+    width: 140px;
+}
+
+.endScreenDiv3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -70px;
+}
+
+.endScreenDiv3 button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: blue;
+    background-color: rgb(247, 247, 247);
+}
+
+.endScreenDiv3 button:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+
+.startScreenDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.startButton {
+    border: none;
+    background-color: coral;
+    color: white;
+    width: 145px;
+    height: 30px;
+    border-radius: 7px;
 }

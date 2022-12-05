@@ -63,8 +63,9 @@ let currentQuestion = 0;
 
 function init() {
     document.getElementById('all-questions').innerHTML = questions.length;
+    document.getElementById('startScreen').style = 'display: none';
+    document.getElementById('questionBody').style = '';
     showQuestion();
-    
 }
 
 
@@ -83,6 +84,21 @@ function showQuestion() {
         document.getElementById('answer_4').innerHTML = `<div class="answerButtons"><b>D</b></div>${question['answer_4']}`;
     }
     enablePointer();
+}
+
+
+function showStartScreen() {
+    //TODO: Show Start Screen
+    document.getElementById('startScreen').style = '';
+    document.getElementById('questionBody').style = 'display: none';
+}
+
+
+function restartGame() {
+    document.getElementById('startScreen').style = '';
+    document.getElementById('questionBody').style = 'display: none';
+    document.getElementById('endScreen').style = 'display: none';
+    
 }
 
 

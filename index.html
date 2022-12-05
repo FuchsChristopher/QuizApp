@@ -16,14 +16,10 @@
     <title>QuizApp</title>
 </head>
 
-<body onload="init()">
+<body onload="showStartScreen()">
 
     <div class="container">
         <div class="card2 quiz-card">
-
-            <div class="card-body" id="endScreen" style="display: none;">
-                Quiz beendet!
-            </div>
 
             <div class="bgc-nav">
                 <div class="navImg">
@@ -35,6 +31,30 @@
                     <div class="hover"><a href="#">JS</a></div>
                     <div class="hover"><a href="#">JAVA</a></div>
                 </nav>
+            </div>
+            <div class="card-body card-body-color" id="startScreen" style="display: none;">
+                <div class="startScreenDiv">
+                    <img class="startScreenImg" src="./img/brainbg.jpg" style="width: 32rem;">
+                    <button class="startButton" onclick="init()">START NOW</button>
+                </div>
+
+            </div>
+            <div class="card-body card-body-color" id="endScreen" style="display: none;">
+                <div class="endScreenDiv">
+                    <img class="endScreenImg" src="./img/brain result.png">
+                    <span>COMPLETE<br>
+                        HTML QUIZ
+                    </span>
+                </div>
+                <div class="endScreenDiv2">
+                    <span style="margin-left: 140px;">YOUR SCORE</span><span>1/7</span>
+                    <div><img class="endScreenImg2" src="./img/tropy.png"></div>
+                </div>
+                <div class="endScreenDiv3">
+                    <button>SHARE</button>
+                    <button onclick="restartGame()">REPLAY</button>
+                </div>
+
             </div>
 
             <div class="card-body2 card-body-color" id="questionBody">
