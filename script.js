@@ -58,6 +58,8 @@ let questions = [
 ];
 
 
+let rightQuestions = 0;
+
 let currentQuestion = 0;
 
 
@@ -71,10 +73,17 @@ function init() {
 
 function showQuestion() {
     if (currentQuestion >= questions.length) {
-        //TODO: Show End Screen
+        //Show End Screen
         document.getElementById('endScreen').style = '';
         document.getElementById('questionBody').style = 'display: none';
+        document.getElementById('amount-of-questions').innerHTML = questions.length;
+        document.getElementById('amount-right-of-questions').innerHTML = rightQuestions;
     } else {
+        let percent = currentQuestion / (questions.length -1);
+        percent = Math.round(percent * 100);
+        document.getElementById('progessbar').innerHTML = `${percent} %`;
+        document.getElementById('progessbar').style.width = `${percent}%`;
+        
         let question = questions[currentQuestion];
         document.getElementById('question-number').innerHTML = currentQuestion + 1;
         document.getElementById('questiontext').innerHTML = question['question'];
@@ -88,7 +97,7 @@ function showQuestion() {
 
 
 function showStartScreen() {
-    //TODO: Show Start Screen
+    //Show Start Screen
     document.getElementById('startScreen').style = '';
     document.getElementById('questionBody').style = 'display: none';
 }
@@ -98,6 +107,9 @@ function restartGame() {
     document.getElementById('startScreen').style = '';
     document.getElementById('questionBody').style = 'display: none';
     document.getElementById('endScreen').style = 'display: none';
+    document.getElementById('next-button').innerHTML = 'Nächste Frage';
+    rightQuestions = 0;
+    currentQuestion = 0;
     
 }
 
@@ -109,6 +121,7 @@ function answer(selection) {
     if (selectionQuestionNumber == question['right_answer']) {
         document.getElementById(selection).firstChild.classList.add('bgForButton');
         document.getElementById(selection).parentNode.classList.add('bg-success');
+        rightQuestions++;
         disabledPointer();
     } else {
         document.getElementById(idOfRightAnswer).firstChild.classList.add('bgForButton');
@@ -116,6 +129,10 @@ function answer(selection) {
         document.getElementById(selection).firstChild.classList.add('bgForButton2');
         document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
         disabledPointer();
+    }
+
+    if (currentQuestion == 6) {
+        document.getElementById('next-button').innerHTML = 'Finsh';
     }
     document.getElementById('next-button').disabled = false;
 }
