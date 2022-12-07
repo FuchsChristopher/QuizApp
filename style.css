@@ -56,14 +56,14 @@
 .bgc-nav {
     background-color: rgb(39, 53, 92);
     color: white;
-    height: 62vh;
+    height: 66vh;
     width: 10rem;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .card-body-color {
     background-color: rgb(247, 247, 247);
-    border-radius: 4px;
+    border-radius: 0px 10px 10px 0px;
     flex-direction: column;
 }
 
