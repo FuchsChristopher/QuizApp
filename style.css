@@ -9,7 +9,8 @@
     border-top: 1px solid rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-between;
-    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .quiz-card {
@@ -217,4 +218,120 @@ nav div {
     flex-direction: column;
     bottom: 265px;
     text-align: center;
+}
+
+@media (max-width:1025px) {
+    .bgc-nav {
+        height: 84vh;
+    }
+}
+
+@media (max-width:913px) {
+    .startScreenDiv2 {
+        display: flex;
+        position: absolute;
+        right: 170px;
+        flex-direction: column;
+        text-align: center;
+        top: 25px;
+    }
+}
+
+@media (max-width:821px) {
+    .startScreenDiv2 {
+        display: flex;
+        position: absolute;
+        right: 170px;
+        flex-direction: column;
+        text-align: center;
+        top: 25px;
+    }
+}
+
+@media (max-width:541px) {
+    .startScreenDiv2 {
+        right: 120px;
+    }
+}
+
+@media (max-width:415px) {
+    .card-body-color {
+        margin-right: -8px;
+        border-radius: 0;
+    }
+
+    .bgc-nav {
+        height: 100vh;
+        margin-left: -13px;
+        border-radius: 0;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .startScreenDiv2 {
+        top: 45px;
+        right: 21px;
+        bottom: 450px;
+    }
+
+    .startScreenImg {
+        width: 100%;
+        margin-top: 109px;
+    }
+
+    .startButton {
+        margin-right: 38px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:413px) {
+    .startButton {
+        margin-top: 123px;
+    }
+
+    .startScreenDiv2 {
+        right: 33px;
+    }
+}
+
+@media (max-width:361px) {
+    .question-footer {
+        width: 120%;
+    }
+}
+
+@media (max-width:376px) {
+    .card-body-color {
+        margin-right: -8px;
+        border-radius: 0;
+        overflow: hidden;
+    }
+
+    .bgc-nav {
+        height: 100vh;
+        margin-left: -13px;
+        border-radius: 0;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .startScreenDiv2 {
+        top: 45px;
+        right: 21px;
+    }
+
+    .startScreenImg {
+        width: 100%;
+        margin-top: 109px;
+    }
+
+    .startButton {
+        margin-right: 38px;
+        margin-top: 90px;
+    }
 }

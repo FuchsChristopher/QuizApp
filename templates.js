@@ -19,7 +19,7 @@ function renderQuizApp() {
                         The Awesome HTML Quiz</b>
                         Ready for for the Challenge?
                     </div>
-                    <img class="startScreenImg" src="./img/brainbg.jpg" style="width: 32rem;">
+                    <img class="startScreenImg" src="./img/brainbg.jpg" style="width: 100%;">
                     <button class="startButton" onclick="init()">START NOW</button>
                 </div>
 
