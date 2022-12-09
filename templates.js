@@ -27,13 +27,13 @@ function renderQuizApp() {
             <div class="card-body card-body-color" id="endScreen" style="display: none;">
                 <div class="endScreenDiv">
                     <img class="endScreenImg" src="./img/brain result.png">
-                    <span>COMPLETE<br>
+                    <span class="completeHtml">COMPLETE<br>
                         HTML QUIZ
                     </span>
                 </div>
                 <div class="endScreenDiv2">
-                    <span style="margin-left: 140px;">YOUR SCORE</span><b id="amount-right-of-questions" style="margin-left: 40px;">1</b>/<b id="amount-of-questions" style="margin-right: 55px;">5</b>
-                    <div><img class="endScreenImg2" src="./img/tropy.png"></div>
+                    <span class="scoreDiv">YOUR SCORE</span><b id="amount-right-of-questions" style="margin-left: 40px;">1</b>/<b class="maxNumberOfQestion" id="amount-of-questions">5</b>
+                    <div class="endScreenImgDiv"><img class="endScreenImg2" src="./img/tropy.png"></div>
                 </div>
                 <div class="endScreenDiv3">
                     <button>SHARE</button>

@@ -220,6 +220,14 @@ nav div {
     text-align: center;
 }
 
+.scoreDiv {
+    margin-left: 140px;
+}
+
+.maxNumberOfQestion {
+    margin-right: 55px;
+}
+
 @media (max-width:1025px) {
     .bgc-nav {
         height: 84vh;
@@ -303,6 +311,39 @@ nav div {
     }
 }
 
+/*@media (max-width:380px) {
+    .scoreDiv {
+        margin-left: 0px;
+    }
+
+    .endScreenImg {
+        width: 155px;
+        margin-right: 130px;
+    }
+
+    .completeHtml {
+        margin-right: 130px;
+    }
+
+    .endScreenImg2 {
+        width: 90px;
+    }
+
+    .endScreenDiv3 {
+        margin-right: 170px;
+        margin-top: 0px;
+    }
+
+    .endScreenImgDiv {
+        margin-top: 100px;
+        margin-right: 124px;
+    }
+
+    .maxNumberOfQestion {
+        margin-right: 24px;
+    }
+}*/
+
 @media (max-width:376px) {
     .card-body-color {
         margin-right: -8px;
@@ -333,5 +374,33 @@ nav div {
     .startButton {
         margin-right: 38px;
         margin-top: 90px;
+    }
+
+    .endScreenImg {
+        width: 135px;
+    }
+
+    .endScreenImg2 {
+        width: 82px;
+    }
+
+    .endScreenDiv2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .endScreenDiv3 {
+        margin-top: 30px;
+    }
+
+    .scoreDiv {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .endScreenImgDiv {
+        margin-left: -23px;
     }
 }
