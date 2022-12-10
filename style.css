@@ -228,6 +228,33 @@ nav div {
     margin-right: 55px;
 }
 
+/*@media (max-width:380px) {
+    .scoreDiv {
+        margin-left: 0px;
+    }
+    .endScreenImg {
+        width: 155px;
+        margin-right: 130px;
+    }
+    .completeHtml {
+        margin-right: 130px;
+    }
+    .endScreenImg2 {
+        width: 90px;
+    }
+    .endScreenDiv3 {
+        margin-right: 170px;
+        margin-top: 0px;
+    }
+    .endScreenImgDiv {
+        margin-top: 100px;
+        margin-right: 124px;
+    }
+    .maxNumberOfQestion {
+        margin-right: 24px;
+    }
+}*/
+
 @media (max-width:1025px) {
     .bgc-nav {
         height: 84vh;
@@ -309,42 +336,43 @@ nav div {
     .question-footer {
         width: 120%;
     }
+    .comlpeteSide {
+        margin-top: -60px;
+    }
 }
 
-/*@media (max-width:380px) {
-    .scoreDiv {
-        margin-left: 0px;
-    }
-
-    .endScreenImg {
-        width: 155px;
-        margin-right: 130px;
-    }
-
-    .completeHtml {
-        margin-right: 130px;
-    }
-
-    .endScreenImg2 {
-        width: 90px;
-    }
-
-    .endScreenDiv3 {
-        margin-right: 170px;
-        margin-top: 0px;
-    }
-
-    .endScreenImgDiv {
-        margin-top: 100px;
-        margin-right: 124px;
-    }
-
-    .maxNumberOfQestion {
-        margin-right: 24px;
-    }
-}*/
-
 @media (max-width:376px) {
+
+    .comlpeteSide {
+        margin-top: -23px;
+    }
+
+    body {
+        margin-top: -23px;
+        
+        
+    }
+
+    .imgSize {
+        margin-top: 15px;
+        margin-bottom: -5px;
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
+    .navLink {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: initial;
+    }
+
+    .card2 {
+        flex-direction: column;
+    }
+
     .card-body-color {
         margin-right: -8px;
         border-radius: 0;
@@ -352,9 +380,10 @@ nav div {
     }
 
     .bgc-nav {
-        height: 100vh;
+        height: 162px;
         margin-left: -13px;
         border-radius: 0;
+        width: 24rem;
     }
 
     .card-body {
@@ -362,8 +391,8 @@ nav div {
     }
 
     .startScreenDiv2 {
-        top: 45px;
-        right: 21px;
+        top: 187px;
+        right: 80px;
     }
 
     .startScreenImg {
@@ -373,7 +402,7 @@ nav div {
 
     .startButton {
         margin-right: 38px;
-        margin-top: 90px;
+        margin-top: 58px;
     }
 
     .endScreenImg {
